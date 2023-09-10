@@ -7,20 +7,16 @@ int main(void)
 {
 	int i, j;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 9; i++)
 	{
-	for (j = i; j < 10; j++)
-	{
-	if (i != j)
+	for (j = i + 1; j < 10; j++)
 	{
 	putchar('0' + i);
 	putchar('0' + j);
-	if (i != 8 || i != 9)
-	{
+	if (i == 8 && j == 9)
+	continue;
 	putchar(',');
 	putchar(' ');
-	}
-	}
 	}
 	}
 	putchar('\n');
