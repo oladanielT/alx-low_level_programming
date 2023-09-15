@@ -8,7 +8,6 @@ int main(void)
 	int a = 1;
 	int b = 2;
 	int i = 0;
-	int next;
 
 	while (i < 50)
 	{
