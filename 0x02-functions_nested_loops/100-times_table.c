@@ -22,7 +22,17 @@ void print_times_table(int n)
 	}
 	else
 	{
+	if (c < 10)
+	{
 	printf("%d,   ", c);
+	}
+	else if (c >= 10 && c < 100)
+	{
+		printf("%d,  ", c)
+	}
+	else
+	{
+	printf("%d, ", c);
 	}
 	}
 	printf("\n");
