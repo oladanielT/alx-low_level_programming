@@ -15,15 +15,11 @@ int main(void)
 		{
 			printf("%d", a);
 		}
-		else if (i == 1)
-		{
-			printf(", %d", b);
-		}
 		else
 		{
+			printf(", %d", b);
 			a = b;
 			b = a + b;
-			printf(", %d", b);
 		}
 		i++;
 	}
