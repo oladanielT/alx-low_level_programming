@@ -21,8 +21,8 @@ int main(void)
 		}
 		else
 		{
-			b += a;
-			a = b - a;
+			a = b;
+			b = a + b;
 			printf(", %d", b);
 		}
 		i++;
