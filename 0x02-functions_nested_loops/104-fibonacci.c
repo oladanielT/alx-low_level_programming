@@ -30,7 +30,7 @@ int main(void)
 			h_1 += 1;
 			h_2 %= 10000000000;
 		}
-		printf("%lu%lu ", h_1, h_2);
+		printf("%lu%lu", h_1, h_2);
 		if (count != 98)
 		{
 			printf(",");
