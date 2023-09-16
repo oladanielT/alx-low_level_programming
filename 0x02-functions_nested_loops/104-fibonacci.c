@@ -7,7 +7,7 @@ int main(void)
 {
 	int count;
 	unsigned long a = 0, b = 1, sum;
-	unsigned long h_1, h_2;
+	unsigned long h_1, h_+2;
 	unsigned long a_h_1, a_h_2, b_h_1, b_h_2;
 
 	for (count = 0; count < 92; count++)
@@ -32,12 +32,11 @@ int main(void)
 		}
 		printf("%lu%lu", h_1, h_2);
 		if (count != 98)
-		{
-			printf(",");
-			a_h_1 = b_h_1;
-			a_h_2 = b_h_2;
-			b_h_1 = h_1;
-			b_h_2 = h_2;
+		printf(",");
+		a_h_1 = b_h_1;
+		a_h_2 = b_h_2;
+		b_h_1 = h_1;
+		b_h_2 = h_2;
 		}
 	}
 		printf("\n");
