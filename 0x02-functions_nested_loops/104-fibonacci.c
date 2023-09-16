@@ -37,7 +37,7 @@ int main(void)
 		a_h_2 = b_h_2;
 		b_h_1 = h_1;
 		b_h_2 = h_2;
-		}
+		
 	}
 		printf("\n");
 		return (0);
