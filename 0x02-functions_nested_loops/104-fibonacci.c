@@ -5,41 +5,33 @@
  */
 int main(void)
 {
-	int count;
-	unsigned long a = 0, b = 1, sum;
-	unsigned long h_1, h_2;
-	unsigned long a_h_1,a_h_2, b_h_1, b_h_2;
+	unsigned long count;
+	unsigned long a, b, a1, a2, b1, b2;
 
-	for (count = 0; count < 92; count++)
+	a = 1;
+	b = 2;
+
+	printf("%lu", a);
+	for (count = 1; count < 91; count++)
 	{
-		sum = a + b;
-		printf("%lu, ", sum);
-		a = b;
-		b = sum;
+		printf(", %lu", b);
+		b = b + a;
+		a = b - a;
 	}
-	a_h_1 = a / 10000000000;
-	b_h_1 = b / 10000000000;
-	a_h_2 = a % 10000000000;
-	b_h_2 = b % 10000000000;
-	for (count = 93; count < 99; count++)
+	a1 = a / 1000000000;
+	a2 = a % 1000000000;
+	b1 = b / 1000000000;
+	b2 = b % 1000000000;
+
+	for (count = 92; count < 99; count++)
 	{
-		h_1 = a_h_1 + b_h_1;
-		h_2 = a_h_2 + b_h_2;
-		if (a_h_2 + b_h_2 > 9999999999)
-		{
-			h_1 += 1;
-			h_2 %= 10000000000;
-		}
-		printf("%lu%lu", h_1, h_2);
-		if (count != 98)
-		{
-		printf(",");
-		a_h_1 = b_h_1;
-		a_h_2 = b_h_2;
-		b_h_1 = h_1;
-		b_h_2 = h_2;
-		}
+		printf(", %lu", b1 + (b2 / 1000000000));
+		printf("%lu", b2 % 1000000000);
+		b1 = b1 + a1;
+		a1 = b1 - a1;
+		b2 = b2 + a2;
+		a2 = b2 - a2;
 	}
-		printf("\n");
-		return (0);
+	printf("\n");
+	return (0);
 }
