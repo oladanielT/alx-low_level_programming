@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * main - fizz-buzz function
  * Return: Always 0
@@ -25,8 +25,8 @@ int main(void)
 		{
 			printf("%d ", i);
 		}
-		printf("Buzz")
 	}
+	printf("Buzz");
 	printf("\n");
 	return (0);
 }
