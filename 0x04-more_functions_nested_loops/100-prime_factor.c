@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	long int i, n, m;
+	long int i, n;
 
 	n = 612852475143;
 	
@@ -19,8 +19,7 @@ int main(void)
 				printf("%ld\n", i);
 				break;
 			}
-			m = n / i;
-			n = m;
+			n = n / i;
 		}
 	}
 	return (0);
