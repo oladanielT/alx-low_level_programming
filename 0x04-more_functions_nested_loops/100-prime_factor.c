@@ -23,6 +23,7 @@ int main(void)
 			n = m;
 		}
 	}
+	printf("\n");
 	return (0);
 }
 
