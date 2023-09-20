@@ -16,13 +16,13 @@ int main(void)
 		{
 			if (n == i)
 			{
-				printf("%ld \n", i);
+				printf("%ld\n", i);
 				break;
 			}
 			n = n / i;
 		}
 	}
-	return (0);
+	return (1);
 }
 
 
