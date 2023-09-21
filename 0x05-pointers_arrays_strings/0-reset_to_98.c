@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * reset_t0_98 - function to reset
+ * reset_to_98 - function to pointer
  * @n: the value dereferencing the pointer
  * Return: nth
  */
