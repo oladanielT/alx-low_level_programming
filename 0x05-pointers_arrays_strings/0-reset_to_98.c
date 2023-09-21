@@ -4,7 +4,7 @@
  * @n: the value dereferencing the pointer
  * Return: nth
  */
-void reset_t0_98(int *n)
+void reset_to_98(int *n)
 {
 	*n = 98;
 }
