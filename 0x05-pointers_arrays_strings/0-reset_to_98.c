@@ -1,10 +1,9 @@
 #include "main.h"
 /**
  * reset_t0_98 - function to reset
- * @n: input
- * Return n
+ * @n: the value dereferencing the pointer
+ * Return: nth
  */
-
 void reset_t0_98(int *n)
 {
 	*n = 98;
