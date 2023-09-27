@@ -2,4 +2,5 @@
 #define MAIN_H
 int _putchar(char c);
 char *_memcpy(char *dest, char *src, unsigned int n);
+unsigned int _strspn(char *s, char *accept);
 #endif
