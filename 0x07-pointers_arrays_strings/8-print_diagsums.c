@@ -16,7 +16,7 @@ void print_diagsums(int *a, int size)
 	for (x = 0; x < size; x++)
 	{
 		ps += a[x * size + x];
-		ss += a[x * sixe + (size - x - 1)];
+		ss += a[x * sixe + (size - 1 - x)];
 	}
 	printf("%d, %d\n", ps, ss);
 }
