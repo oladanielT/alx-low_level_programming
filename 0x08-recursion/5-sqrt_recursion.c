@@ -1,4 +1,6 @@
 #include "main.h"
+
+int main_sqrt_recursion(int n, int i);
 /**
  * _sqrt_recursion - function that prints the squareroot
  * @n: number to cal
