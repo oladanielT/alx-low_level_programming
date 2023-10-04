@@ -6,7 +6,7 @@
  * Return:AAAAAAA Always 0
  */
 
-void _puts(char *s)
+void _puts(char *str)
 {
-	printf("%s\n", s);
+	printf("%s\n", str);
 }
