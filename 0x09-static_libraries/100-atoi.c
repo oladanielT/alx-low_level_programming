@@ -6,14 +6,14 @@
  */
 int _atoi(char *s)
 {
-	int s = 1, i = 0;
+	int sn = 1, i = 0;
 	unsigned int r = 0;
 
 	while (!(s[i] <= 9 && s[i] >= 0) && s[i] != '\0')
 	{
 		if (s[i] == '-')
 		{
-			s *= -1;
+			sn *= -1;
 		}
 		i++;
 	}
@@ -22,6 +22,6 @@ int _atoi(char *s)
 		r = (r * 10) + (s[i] - '0');
 		i++;
 	}
-	r *= s;
+	r *= sn;
 	return (r);
 }
