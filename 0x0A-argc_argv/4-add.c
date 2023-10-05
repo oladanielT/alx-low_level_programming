@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 		if (num <= 0 || (argv[i][0] != '0' && !num))
 		{
 			printf("Error\n");
-			return (0);
+			return (1);
 		}
 		else
 		{
