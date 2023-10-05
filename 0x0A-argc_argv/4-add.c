@@ -23,10 +23,13 @@ int main(int argc, char *argv[])
 	{
 		int num = atoi(argv[i]);
 
-		if (num <= 0 || (argv[i][0] != '0' && !num))
+		if (num <= 0)
+		{
+		if (argv[i][0] != '0' && !num)
 		{
 			printf("Error\n");
 			return (1);
+		}
 		}
 		else
 		{
