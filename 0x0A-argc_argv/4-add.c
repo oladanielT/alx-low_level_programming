@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	{
 		int num = atoi(argv[i]);
 
-		if (!num && num < 0)
+		if (!num || num < 0)
 		{
 			printf("Error\n");
 			return (1);
