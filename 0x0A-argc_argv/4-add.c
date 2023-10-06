@@ -10,7 +10,7 @@ int _isdigit(char *s);
 
 int _isdigit(char *s)
 {
-	int i;
+	unsigned int i;
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] < '0' || s[i] > '9')
@@ -29,7 +29,7 @@ int _isdigit(char *s)
 
 int main(int argc, char *argv[])
 {
-	int i;
+	int i = 1;
 	int sum = 0;
 
 	if (argc == 1)
@@ -37,19 +37,21 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	for (i = 1; i < argc; i++)
+	while (i < argc)
 	{
-		if (!_isdigit(argv[i]))
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else
+		if (_isdigit(argv[i]))
 		{
 			int num = atoi(argv[i]);
 			sum += num;
 		}
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
+		i++;
 	}
+
 	printf("%d\n", sum);
 	return (0);
 }
