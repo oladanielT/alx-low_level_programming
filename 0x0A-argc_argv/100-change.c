@@ -5,6 +5,8 @@
 /**
  * main - A program that prints the minimum number of
  * coins to make change for an amount of mone
+ * @argc: Argument
+ * @argv: Argument
  * Return: Always 0
  */
 
