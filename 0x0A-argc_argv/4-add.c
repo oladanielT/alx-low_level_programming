@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 int _isdigit(char *s);
 
 /**
@@ -11,7 +12,7 @@ int _isdigit(char *s);
 int _isdigit(char *s)
 {
 	unsigned int i;
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; i < strlen(s); i++)
 	{
 		if (s[i] < '0' || s[i] > '9')
 		{
