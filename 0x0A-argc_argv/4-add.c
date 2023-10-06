@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <ctype.h>
 
 /**
- * isdigit - function to check for digit
+ * _isdigit - function to check for digit
  * @s: character to chek
  * Return: Always 0
  */
@@ -12,9 +11,10 @@
 int _isdigit(char *s)
 {
 	unsigned int i;
-	for (i = 0; i < strlen(s); i++)
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (!isdigit(s[i]))
+		if (s[i] < '0' || s[i] > '9')
 		{
 			return (0);
 		}
