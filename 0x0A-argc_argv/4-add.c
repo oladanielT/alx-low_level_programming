@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-int _isdigit(char *s);
 
 /**
  * isdigit - function to check for digit
