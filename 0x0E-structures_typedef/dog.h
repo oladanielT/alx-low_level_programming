@@ -1,13 +1,9 @@
-#include <stdlib.h>
-
-/**
- * dog - creating a struct for dog
- * Return: Always 0
- */
-
+#ifndef MAIN_H
+#define MAIN_H
 struct dog
 {
 	char *name;
 	float age;
 	char *owner;
 }
+#endif
