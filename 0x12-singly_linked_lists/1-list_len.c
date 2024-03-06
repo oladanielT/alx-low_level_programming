@@ -1,20 +1,21 @@
 #include <stdio.h>
-#include "lists.h"
+#include "main.h"
+
 
 /**
- * list_len - function to list the element in a linked list
- * @h: the linked list
- * Return: the elements of a linked list
+ * list_len - function to return the element of a linked list
+ * @h: first element of the list
+ * Return: element of the linked list
  */
 
 size_t list_len(const list_t *h)
 {
-	size_t n = 0;
+	size_t s = 0;
 
 	while (h)
 	{
-		n = n + 1;
-		h = h->next;
+		s++;
+		h=h->next;
 	}
-	return (n);
+	return (s);
 }
