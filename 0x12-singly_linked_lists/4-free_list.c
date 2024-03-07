@@ -12,13 +12,13 @@
 
 void free_list(list_t *head)
 {
-	list_t *next;
+	list_t *promp;
 
 	while (head)
 	{
-		next = head->next;
+		promp = head->next;
 		free(head->str);
 		free(head);
-		head = next;
+		head = promp;
 	}
 }
