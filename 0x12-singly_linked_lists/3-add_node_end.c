@@ -1,5 +1,4 @@
 #include <string.h>
-#include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
 
@@ -12,9 +11,10 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	unsigned int len = 0;
 	list_t *new;
 	list_t *promp = *head;
+
+	unsigned int len = 0;
 
 	while (str[len])
 	{
