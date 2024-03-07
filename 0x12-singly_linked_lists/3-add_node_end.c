@@ -38,8 +38,6 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		promp = promp->next;
 		promp->next = new;
-
-		return (new);
 	}
+	return (new);
 }
-
