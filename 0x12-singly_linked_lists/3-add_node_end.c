@@ -24,7 +24,6 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (!new)
 	{
 		return (NULL);
-		free(new);
 	}
 	new->str = strdup(str);
 	new->len = len;
@@ -35,10 +34,10 @@ list_t *add_node_end(list_t **head, const char *str)
 		*head = new;
 		return (new);
 	}
-	while (promp->next)
+	while (promp->next != NULL)
 	{
 		promp = promp->next;
-		promp->next = new;
 	}
+	promp->next = new;
 	return (new);
 }
