@@ -1,7 +1,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+#include "lists.h"
 
 /**
  * add_node_end - function to add elemnt to the end of a node
