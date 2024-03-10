@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include <unistd.h>
 
 /**
  * _print_rev_recursion - a function that prints a string in reverse.
@@ -19,9 +19,9 @@ void _print_rev_recursion(char *s)
 
 	for (j = i + 1; j >= 0; j--)
 	{
-		_putchar(str[j]);
+		putchar(str[j]);
 	}
-	_putchar('\n');
+	putchar('\n');
 
 	return (0);
 }
