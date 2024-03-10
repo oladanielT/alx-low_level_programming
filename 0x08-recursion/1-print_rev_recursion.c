@@ -21,7 +21,4 @@ void _print_rev_recursion(char *s)
 	{
 		putchar(str[j]);
 	}
-	putchar('\n');
-
-	return (0);
 }
