@@ -12,13 +12,13 @@ void _print_rev_recursion(char *s)
 	int i = 0;
 	int j;
 
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 	{
 		i++;
 	}
 
-	for (j = i + 1; j >= 0; j--)
+	for (j = i - 1; j >= 0; j--)
 	{
-		putchar(str[j]);
+		putchar(s[j]);
 	}
 }
