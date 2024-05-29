@@ -11,8 +11,8 @@ all: ${OBJ}
 	${CC} ${OBJ} -o ${NAME}
 
 clean:
-	${RM} *~${NAME}
+	${RM} *~ ${NAME}
 oclean:
-	${RM} *.o
+	${RM} ${OBJ}
 fclean: clean oclean
 rm: fclean all
