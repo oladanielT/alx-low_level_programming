@@ -1,4 +1,4 @@
-#creating a makefile and setting some rules.
+#creating a makefile
 
 
 CC = gcc
@@ -9,7 +9,6 @@ RM = rm -f
 
 all: ${OBJ}
 	${CC} ${OBJ} -o ${NAME}
-
 clean:
 	${RM} *~ ${NAME}
 
@@ -18,4 +17,4 @@ oclean:
 
 fclean: clean oclean
 
-rm: fclean all
+re: fclean all
