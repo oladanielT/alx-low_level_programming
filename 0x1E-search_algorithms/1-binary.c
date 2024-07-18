@@ -17,7 +17,7 @@ void print_text(int *array, int l, int h)
 	{
 		printf("%d", array[i]);
 		if (i < h)
-			printf(",");
+			printf(", ");
 	};
 	printf("\n");
 }
